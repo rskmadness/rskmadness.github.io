@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Garrett Boatman -- Developer -- @garrettboatman
+    Justin Boatman -- Idea & Marketing -- @jboat
+
+# THANKS
+
+    Jim Boeheim
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
