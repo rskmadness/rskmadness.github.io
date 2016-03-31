@@ -54,6 +54,7 @@ jQuery(function( $ ){
         $('#pre-game button.button-next').on('click', function(){
             $('#pre-game').fadeOut('normal', function(){
                 $('#game-1').fadeIn();
+                $('.logo').fadeIn();
             });
         });
 
