@@ -78,7 +78,7 @@ jQuery(function( $ ){
         });
 
         function checkGame1(){
-            if($('input[name=game-1-option]').is(':checked')){
+            if($('input[name=game1option]').is(':checked')){
                 $('#game-1 button.button-next').attr('disabled', false).html('Next');
             } else{
                 $('#game-1 button.button-next').attr('disabled', true).html('&nbsp;&nbsp;&nbsp;Pick a Winner&nbsp;&nbsp;&nbsp;');
@@ -86,7 +86,7 @@ jQuery(function( $ ){
         }
 
         function checkGame2(){
-            if($('input[name=game-2-option]').is(':checked')){
+            if($('input[name=game2option]').is(':checked')){
                 $('#game-2 button.button-next').attr('disabled', false).html('Next');
             } else{
                 $('#game-2 button.button-next').attr('disabled', true).html('&nbsp;&nbsp;&nbsp;Pick a Winner&nbsp;&nbsp;&nbsp;');
@@ -94,7 +94,7 @@ jQuery(function( $ ){
         }
 
         function checkFinals(){
-            if($('#finals-game-option-1').val() && $('#finals-game-option-2').val() && $('input[name=game-3-option]').is(':checked')){
+            if($('#finals-game-option-1').val() && $('#finals-game-option-2').val() && $('input[name=game3option]').is(':checked')){
                 $('button#submit').attr('disabled', false).html('&nbsp;&nbsp;&nbsp;Submit your Bracket&nbsp;&nbsp;&nbsp;');
             } else{
                 $('button#submit').attr('disabled', true).html('&nbsp;&nbsp;&nbsp;Pick a Winner&nbsp;&nbsp;&nbsp;');

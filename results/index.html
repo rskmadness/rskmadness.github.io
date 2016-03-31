@@ -23,7 +23,7 @@
     <div class="share"><button id="t" type="submit" class="btn btn-primary">Tweet This</button></div>
     <div class="logo"><a href="https://riskalyze.com"><img src="/img/Riskalyze_logo.svg"></a></div>
     <div class="card">
-        <img class="result" src="/img/results/portfolio_placeholder.svg">
+        <img class="result" src="">
     </div>
     <div class="disclaimer">Disclaimer: <a target="_blank" style="color: #F3B435" href="https://riskalyze.com">Riskalyze</a> is based on nobel prize-winning mathematics. This is not.
         This exercise was produced as an April Fools parody and should be viewed for entertainment only.</div>
@@ -48,8 +48,40 @@
     }
 
     var data = getUrlVars();
-    console.log(data);
-    debugger;
+    var game1 = data.game1option;
+    var game2 = data.game2option;
+    var champion = data.game3option;
+    var img = 'portfolio_placeholder.svg';
+    console.log(game1,game2,champion);
+
+    if(champion == 1){
+        if(game2 == 3){
+            // NOVA beats UNC
+            img = 'NOVA_Beats_UNC.svg';
+        } else if(game2 == 4){
+            img = 'NOVA_Beats_SYR.svg';
+        }
+    } else if(champion == 2){
+        if(game2 == 3){
+            img = 'OK_Beats_UNC.svg';
+        } else if(game2 == 4){
+            img = 'OK_Beats_SYR.svg';
+        }
+    } else if(champion == 3){
+        if(game1 == 1){
+            // UNC beats NOVA
+        } else if(game1 == 2){
+            // UNC beats Oklahoma
+        }
+    } else if(champion == 4){
+        if(game1 == 1){
+            img = 'SYR_Beats_NOVA.svg';
+        } else if(game1 == 2){
+            img = 'SYR_Beats_OK.svg';
+        }
+    }
+
+    $('.result').attr('src', '/img/results/' + img);
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
