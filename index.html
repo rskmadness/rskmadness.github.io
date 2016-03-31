@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://clients.riskalyze.com/compiled/style.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -19,8 +20,61 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div id="main">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="logo"><img src="http://edc9a5693ce65bd9f715-2fe110551da4f2734eb8a419a95ff78b.r19.cf2.rackcdn.com/riskalyze_logo_email.jpg"></div>
+                    <form id="madness" action="/results">
+                        <div class="game" id="game-1">
+                            <br>
+                            <h3>Who wins the first game?</h3>
+                            <hr class="small">
+                            <small>2 <b>Villanova</b> vs. 2 <b>Oklahoma</b></small><br /><small class="light">April 2 @ 3:09pm PST</small><br>
+                            <br>
+                            <input class="game-input" id="game-1-option-1" name="game-1-option" value="1" type="radio">
+                            <label for="game-1-option-1"><img title="Villanova" src="/img/Villanova.svg"></label>
+
+                            <input class="game-input" id="game-1-option-2" name="game-1-option" value="2" type="radio">
+                            <label for="game-1-option-2"><img title="Oklahoma" src="/img/OKU.svg"></label>
+                            <hr class="small">
+                            <button type="button" class="btn btn-primary btn-loader button-next" disabled>&nbsp;&nbsp;&nbsp;Pick a Winner&nbsp;&nbsp;&nbsp;</button>
+                        </div>
+                        <div style="display: none" class="game" id="game-2">
+                            <br>
+                            <h3>Who wins the second game?</h3>
+                            <hr class="small">
+                            <small>1 <b>North Carolina</b> vs. 10 <b>Syracuse</b></small><br /><small class="light">April 2 @ 5:49pm PST</small><br>
+                            <br>
+                            <input class="game-input" id="game-2-option-1" name="game-2-option" value="3" type="radio">
+                            <label for="game-2-option-1"><img title="North Carolina" src="/img/UNC.svg"></label>
+
+                            <input class="game-input" id="game-2-option-2" name="game-2-option" value="4" type="radio">
+                            <label for="game-2-option-2"><img title="Syracuse" src="/img/Syracuse.svg"></label>
+                            <hr class="small">
+                            <button type="button" class="btn btn-primary btn-loader button-next" disabled>&nbsp;&nbsp;&nbsp;Pick a Winner&nbsp;&nbsp;&nbsp;</button>
+                        </div>
+                        <div style="display: none" class="game" id="finals">
+                            <br>
+                            <h3>Who wins the NCAA Championship?</h3>
+                            <hr class="small">
+                            <small><span id="final-detail-1"><b>Team 1</b></span> vs. <span id="final-detail-2"><b>Team 2</b></span></small><br /><small class="light">April 4, 2016</small><br>
+                            <br>
+                            <div id="finals-team-1">
+                                <input id="finals-game-option-1" name="game-3-option" value="" type="radio" disabled>
+                                <label for="finals-game-option-1">Game #1 - Unselected</label>
+                            </div>
+                            <div id="finals-team-2">
+                                <input id="finals-game-option-2" name="game-3-option" value="" type="radio" disabled>
+                                <label for="finals-game-option-2">Game #2 - Unselected</label>
+                            </div>
+                            <hr class="small">
+                            <button id="submit" type="submit" class="btn btn-primary btn-loader button-next" disabled>&nbsp;&nbsp;&nbsp;Pick a Winner&nbsp;&nbsp;&nbsp;</button>
+                        </div>
+                    </form>
+                    <br><br>
+                </div>
+            </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -34,7 +88,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            ga('create','UA-38489303-3');ga('send','pageview');
         </script>
     </body>
 </html>
