@@ -23,9 +23,18 @@
         <div id="main">
             <div class="card">
                 <div class="card-inner">
-                    <div class="logo"><img src="http://edc9a5693ce65bd9f715-2fe110551da4f2734eb8a419a95ff78b.r19.cf2.rackcdn.com/riskalyze_logo_email.jpg"></div>
+                    <div class="logo"><img src="/img/Riskalyze_logo.svg"></div>
                     <form id="madness" action="/results">
-                        <div class="game" id="game-1">
+                        <div id="pre-game">
+                            <span class="plus">+</span>
+                            <img width="130" src="/img/77f2c5cd-2e01-436c-b16f-ea8cec5cd43d-220x220.png">
+                            <br>
+                            <h3>Find out your Final Four's Risk Number.</h3>
+                            <hr class="small">
+                            <p>This is some fun text if you need it.</p> <hr class="small">
+                            <button type="button" class="btn btn-primary btn-loader button-next">&nbsp;&nbsp;&nbsp;Pick First Game&nbsp;&nbsp;&nbsp;</button>
+                        </div>
+                        <div style="display: none" class="game" id="game-1">
                             <br>
                             <h3>Who wins the first game?</h3>
                             <hr class="small">
@@ -74,6 +83,8 @@
                     <br><br>
                 </div>
             </div>
+            <div class="disclaimer">Disclaimer: <a target="_blank" style="color: #F3B435" href="https://riskalyze.com">Riskalyze</a> is based on nobel prize-winning mathematics. This is not.
+                This exercise was produced as an April Fools parody and should be viewed for entertainment only.</div>
         </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

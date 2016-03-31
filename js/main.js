@@ -51,6 +51,12 @@ jQuery(function( $ ){
             checkGame2();
         });
 
+        $('#pre-game button.button-next').on('click', function(){
+            $('#pre-game').fadeOut('normal', function(){
+                $('#game-1').fadeIn();
+            });
+        });
+
         $('#game-1 button.button-next').on('click', function(){
             $('#game-1').fadeOut('normal', function(){
                 $('#game-2').fadeIn();
@@ -62,6 +68,7 @@ jQuery(function( $ ){
                 $('#finals').fadeIn();
             });
         });
+
 
         $('#finals input').on('change', function( ev ){
             var id = $(this).val();
