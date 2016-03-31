@@ -39,6 +39,12 @@ jQuery(function( $ ){
 
         }
 
+        $('.game label').on('click', function( ev ){
+            if ($(this).attr("for") != "") {
+                $("#" + $(this).attr("for")).click();
+            }
+        });
+
         $('#game-1 input, #game-2 input').on('change', function( ev ){
             ev.preventDefault();
             var data = $(this).serializeArray();
