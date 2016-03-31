@@ -21,7 +21,6 @@ html{
 
 #main.results .disclaimer{
     text-align: left;
-    margin-bottom: 50px;
 }
 
 .game{
@@ -98,6 +97,7 @@ label img{
     text-align: center;
     margin-top: 15px;
     color: #7A8F9E;
+    margin-bottom: 50px;
 }
 
 .share{
