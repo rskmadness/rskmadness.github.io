@@ -7,28 +7,28 @@ jQuery(function( $ ){
                 name: "South Carolina",
                 mastcot: "Gamecocks",
                 logo: '<img title="South Carolina" src="/img/2017/SC.svg">',
-                seed: 2
+                seed: 7
             },
             2: {
                 id: 2,
                 name: "Gonzaga",
                 mascot: "Bulldogs",
                 logo: '<img title="Gonzaga" src="/img/2017/ZAGA.svg">',
-                seed: 2
+                seed: 1
             },
             3: {
                 id: 3,
                 name: "Oregon",
                 mascot: "Ducks",
                 logo: '<img title="Oregon" src="/img/2017/O.svg">',
-                seed: 1
+                seed: 3
             },
             4: {
                 id: 4,
                 name: "North Carolina",
                 mascot: "Tar Heels",
                 logo: '<img title="North Carolina" src="/img/2017/UNC.svg">',
-                seed: 10
+                seed: 1
             }
         };
 
