@@ -13,7 +13,7 @@ jQuery(function( $ ){
                 id: 2,
                 name: "Gonzaga",
                 mascot: "Bulldogs",
-                logo: '<img title="Gonzaga" src="/img/2017/ZAGS.svg">',
+                logo: '<img title="Gonzaga" src="/img/2017/ZAGA.svg">',
                 seed: 2
             },
             3: {
