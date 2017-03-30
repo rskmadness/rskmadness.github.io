@@ -4,30 +4,30 @@ jQuery(function( $ ){
         var config = {
             1: {
                 id: 1,
-                name: "Villanova",
-                mastcot: "Wildcats",
-                logo: '<img title="Villanova" src="/img/Villanova.svg">',
+                name: "South Carolina",
+                mastcot: "Gamecocks",
+                logo: '<img title="South Carolina" src="/img/2017/SC.svg">',
                 seed: 2
             },
             2: {
                 id: 2,
-                name: "Oklahoma",
-                mascot: "Sooners",
-                logo: '<img title="Oklahoma" src="/img/OKU.svg">',
+                name: "Gonzaga",
+                mascot: "Bulldogs",
+                logo: '<img title="Gonzaga" src="/img/2017/ZAGS.svg">',
                 seed: 2
             },
             3: {
                 id: 3,
-                name: "North Carolina",
-                mascot: "Tarheels",
-                logo: '<img title="North Carolina" src="/img/UNC.svg">',
+                name: "Oregon",
+                mascot: "Ducks",
+                logo: '<img title="Oregon" src="/img/2017/O.svg">',
                 seed: 1
             },
             4: {
                 id: 4,
-                name: "Syracuse",
-                mascot: "Orange",
-                logo: '<img title="Syracuse" src="/img/Syracuse.svg">',
+                name: "North Carolina",
+                mascot: "Tar Heels",
+                logo: '<img title="North Carolina" src="/img/2017/UNC.svg">',
                 seed: 10
             }
         };
